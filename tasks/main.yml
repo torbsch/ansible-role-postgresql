@@ -1,2 +1,9 @@
 - name: Install postgresql
-  apt: name=postgresql state=latest update_cache=yes
+  apt: 
+    name: postgresql
+    state: present
+
+- name: Install postgresql
+  apt: 
+    name: postgresql-client
+    state: present
