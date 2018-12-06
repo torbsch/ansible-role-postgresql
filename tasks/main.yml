@@ -7,3 +7,8 @@
   apt: 
     name: postgresql-client
     state: present
+
+- name: Ensure psycopg2 is installed
+  package:
+    name: python-psycopg2
+    state: present
